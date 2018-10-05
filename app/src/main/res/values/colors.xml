@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2B2E8F</color>
+    <color name="colorPrimaryDark">#202362</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="appBackgroundtransparent">#50B5BAD0</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_frame_landingpage">#50000000</color>
+
+    <color name="dashboardbackground">#d7d7d7</color>
+
+</resources>

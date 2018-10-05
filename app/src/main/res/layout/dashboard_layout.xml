@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linear_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/landingpage_image_height">
+
+
+                    <com.daimajia.slider.library.SliderLayout
+                        android:id="@+id/dashboard_slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </com.daimajia.slider.library.SliderLayout>
+
+                    <!--<LinearLayout-->
+                        <!--android:id="@+id/weather_layout"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_margin="10dp"-->
+                        <!--android:gravity="center"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:padding="10dp">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/temperature_id"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+
+
+                            <!--android:textColor="@color/white"-->
+                            <!--android:textStyle="bold" />-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/condition"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+
+
+                            <!--android:textColor="@color/white"-->
+
+                            <!--/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/place"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+
+
+                            <!--android:textColor="@color/white"-->
+                            <!--android:textStyle="bold" />-->
+
+                    <!--</LinearLayout>-->
+
+
+                </FrameLayout>
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:fastScrollEnabled="true">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+
+                        <LinearLayout
+                            android:id="@+id/linearapt"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/landingpage_image_height"
+                            android:layout_weight="0.01"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:background="@color/dashboardbackground"
+                            android:id="@+id/linear_weather"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/degree_id"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/condition_id"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/place_id"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+
+
+                        <LinearLayout
+                            android:background="@color/dashboardbackground"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+
+                             //// first layout containing icon
+
+                            <LinearLayout
+                                android:weightSum="10"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/landingpagelinear">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+
+                                        android:padding="@dimen/buttonpadding"
+                                        android:id="@+id/web_home"
+                                        android:layout_width="@dimen/iconsize"
+                                        android:layout_height="@dimen/iconsize"
+                                        android:src="@drawable/nepal"/>
+
+                                    <TextView
+                                        android:id="@+id/txt_nepal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Nepal"
+                                        android:textSize="@dimen/menuname"/>
+
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:padding="@dimen/buttonpadding"
+
+                                        android:id="@+id/web_destination"
+                                        android:layout_width="@dimen/iconsize"
+                                        android:layout_height="@dimen/iconsize"
+                                        android:src="@drawable/destination"/>
+
+                                    <TextView
+                                        android:id="@+id/txt_destination"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Destination"
+                                        android:textSize="@dimen/menuname"/>
+
+
+
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+
+
+                            //// second layout containing icon
+
+                            <LinearLayout
+                                android:weightSum="10"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/landingpagelinear">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:padding="@dimen/buttonpadding"
+
+                                        android:id="@+id/web_companyinfo"
+                                        android:layout_width="@dimen/iconsize"
+                                        android:layout_height="@dimen/iconsize"
+                                        android:src="@drawable/companyinfo" />
+
+                                    <TextView
+                                        android:id="@+id/txt_companyinfo"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Company info"
+                                        android:textSize="@dimen/menuname" />
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:padding="@dimen/buttonpadding"
+
+                                        android:id="@+id/web_activities"
+                                        android:layout_width="@dimen/iconsize"
+                                        android:layout_height="@dimen/iconsize"
+                                        android:src="@drawable/activities"/>
+
+                                    <TextView
+                                        android:id="@+id/txt_activities"
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Activities"
+                                        android:textSize="@dimen/menuname"/>
+
+
+
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+
+
+
+                            //// Third layout containing icon
+
+
+                            <LinearLayout
+                                android:weightSum="10"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/landingpagelinear">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:padding="@dimen/buttonpadding"
+
+                                        android:id="@+id/web_trekking"
+                                        android:layout_width="@dimen/iconsize"
+                                        android:layout_height="@dimen/iconsize"
+                                        android:src="@drawable/trek"/>
+
+                                    <TextView
+                                        android:id="@+id/txt_trekking"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Trekking"
+                                        android:textSize="@dimen/menuname"/>
+
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:padding="@dimen/buttonpadding"
+
+                                        android:id="@+id/web_tour"
+                                        android:layout_width="@dimen/iconsize"
+                                        android:layout_height="@dimen/iconsize"
+                                        android:src="@drawable/tour"/>
+
+                                    <TextView
+                                        android:id="@+id/txt_tour"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Tour"
+                                        android:textSize="@dimen/menuname"/>
+
+
+
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+
+                            //// Forth layout containing icon
+
+
+                            <LinearLayout
+                                android:weightSum="10"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/landingpagelinear">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:padding="@dimen/buttonpadding"
+
+                                        android:id="@+id/web_holyday"
+                                        android:layout_width="@dimen/iconsize"
+                                        android:layout_height="@dimen/iconsize"
+                                        android:src="@drawable/holiday"/>
+
+                                    <TextView
+                                        android:id="@+id/txt_holyday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Holyday special"
+                                        android:textSize="@dimen/menuname"/>
+
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:padding="@dimen/buttonpadding"
+
+                                        android:id="@+id/web_contact"
+                                        android:layout_width="@dimen/iconsize"
+                                        android:layout_height="@dimen/iconsize"
+                                        android:src="@drawable/contact"/>
+
+                                    <TextView
+                                        android:id="@+id/txt_contactus"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Contact us"
+                                        android:textSize="@dimen/menuname"/>
+
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
